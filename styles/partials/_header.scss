@@ -1,0 +1,45 @@
+header {
+    height: 90px;
+    width: 100%;
+    background-color: rgba(193,43,44,.9);
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, .3);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+    .navbar {
+        padding: 0;
+
+        .logo-container {
+
+            .logo {
+                width: 90px;
+                margin-left: 32px;
+            }
+        }
+
+        .nav-enlaces {
+            display: flex;
+            margin: 0;
+            list-style: none;
+
+            .nav-link {
+                margin: 10px;
+
+                a {
+                    color: $negro;
+                    text-decoration: none;
+                    transition: color .2s;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .nabvar-responsive {
+        display: none;
+    }
+}

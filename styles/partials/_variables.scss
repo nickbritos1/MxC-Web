@@ -1,0 +1,17 @@
+$colorPrincipal: #d60000a1;
+$negro: #242424;
+$colorSecundario: #c9cace;
+
+@font-face {
+    font-family: build;
+    src: url(../../Fonts/builttitling/built\ titling\ sb\ it.ttf);
+}
+
+@font-face {
+    font-family: circular;
+    src: url(../../Fonts/Circular/CircularStd-Medium.otf);
+}
+
+* {
+    font-family: circular;
+}

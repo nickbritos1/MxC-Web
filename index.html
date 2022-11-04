@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Martin Carrizo</title>
+</head>
+<body>
+    <header class="d-flex">
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="./index.html"><img class="logo" src="./images/Png_logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-enlaces">
+                <li class="nav-link"><a href="">Inicio</a></li>
+                <li class="nav-link"><a href="">Planes</a></li>
+                <li class="nav-link"><a href="">Tienda</a></li>
+                <li class="nav-link"><a href="">Martín Carrizo</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navbar para teléfonos -->
+
+        <nav class="nabvar-responsive">
+            <div class="logo-container">
+                <a href=""><img src="" alt=""></a>
+            </div>
+            <input type="checkbox">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Planes</a></li>
+                <li><a href="">Tienda</a></li>
+                <li><a href="">Martín Carrizo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="d-flex justify-content-center mt-2">
+        <div class="carrusel-container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="./images/banner.jpg" class="d-block w-100" alt="...">
+                    </div>
+                <div class="carousel-item">
+                    <img src="./images/banner.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/banner.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div style="height: 500px;"></div>
+</body>
+</html>

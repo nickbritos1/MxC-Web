@@ -1,0 +1,52 @@
+@font-face {
+  font-family: build;
+  src: url(../../Fonts/builttitling/built\ titling\ sb\ it.ttf);
+}
+@font-face {
+  font-family: circular;
+  src: url(../../Fonts/Circular/CircularStd-Medium.otf);
+}
+* {
+  font-family: circular;
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: rgba(193, 43, 44, 0.9);
+  box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+header .navbar {
+  padding: 0;
+}
+header .navbar .logo-container .logo {
+  width: 90px;
+  margin-left: 32px;
+}
+header .navbar .nav-enlaces {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+header .navbar .nav-enlaces .nav-link {
+  margin: 10px;
+}
+header .navbar .nav-enlaces .nav-link a {
+  color: #242424;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+header .navbar .nav-enlaces .nav-link a:hover {
+  color: #000;
+}
+header .nabvar-responsive {
+  display: none;
+}
+
+.carrusel-container {
+  width: 90%;
+}/*# sourceMappingURL=style.css.map */
