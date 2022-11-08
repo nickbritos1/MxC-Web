@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/8cf43275b6.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="./scripts/app.js"></script>
     <title>Martin Carrizo</title>
 </head>
 <body>
@@ -32,7 +34,7 @@
             </div>
             <input type="checkbox">
             <ul>
-                <li><a href="">Inicio</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="">Planes</a></li>
                 <li><a href="">Tienda</a></li>
                 <li><a href="">Martín Carrizo</a></li>
@@ -69,6 +71,39 @@
             </div>
         </div>
     </div>
-    <div style="height: 500px;"></div>
+    <hr>
+    <section class="tienda">
+        <div class="d-flex justify-content-center">
+            <div class="encabezado">
+                <h2 class="text-white m-0">Suplementos</h2>
+                <button id="boton-carrito"><i class="fa-solid fa-cart-plus"></i><span id="contadorCarrito">0</span></button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="productos-container">
+                <!-- <div class="producto">
+                    <img src="./images/creatina.jpg" alt="Creatina">
+                    <h4>Creatina Monohidratada</h4>
+                    <p class="producto__precio">$11000</p>
+                    <button class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <div class="modal-container">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="cerrarCarrito"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-container">
+                <!-- <div class="producto-carrito">
+                    <p>Creatina</p>
+                    <p>Precio $1203</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div> -->
+            </div>
+            <p class="precioCarrito">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciarCarrito" class="boton-eliminar">Vaciar carrito</button>
+        </div>
+    </div>
 </body>
 </html>

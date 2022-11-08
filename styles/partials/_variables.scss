@@ -1,5 +1,5 @@
 $colorPrincipal: #d60000a1;
-$negro: #242424;
+$negro: #2a2a2a;
 $colorSecundario: #c9cace;
 
 @font-face {
@@ -14,4 +14,9 @@ $colorSecundario: #c9cace;
 
 * {
     font-family: circular;
+}
+
+body {
+    background: rgb(1,0,10);
+    background: linear-gradient(90deg, rgba(1,0,10,1) 0%, rgba(43,0,0,1) 50%, rgba(167,16,16,1) 100%);
 }
