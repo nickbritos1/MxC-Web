@@ -1,9 +1,9 @@
 //********************************************************* RENDERIZAR TARJETAS *********************************************************
 
 let suplementosStock = [
-    {id: "creatina", nombre: "Creatina Monohidratada", precio: 11000, img: "../images/creatina.jpg"},
-    {id: "proteina", nombre: "Proteína en Polvo", precio: 9000, img: "../images/proteina.jpg"},
-    {id: "preentreno", nombre: "Preentreno", precio: 7500, img: "../images/preentreno.jpg"}
+    {id: "creatina", nombre: "Creatina Monohidratada", precio: 11000, img: "./images/creatina.jpg"},
+    {id: "proteina", nombre: "Proteína en Polvo", precio: 9000, img: "./images/proteina.jpg"},
+    {id: "preentreno", nombre: "Preentreno", precio: 7500, img: "./images/preentreno.jpg"}
 ];
 
 const creatina = suplementosStock[0]

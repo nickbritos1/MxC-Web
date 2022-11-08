@@ -1,10 +1,10 @@
 @font-face {
   font-family: build;
-  src: url(../../Fonts/builttitling/built\ titling\ sb\ it.ttf);
+  src: url(../Fonts/builttitling/built\ titling\ sb\ it.ttf);
 }
 @font-face {
   font-family: circular;
-  src: url(../../Fonts/Circular/CircularStd-Medium.otf);
+  src: url(../Fonts/Circular/CircularStd-Medium.otf);
 }
 * {
   font-family: circular;
