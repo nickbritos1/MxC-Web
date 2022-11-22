@@ -9,7 +9,10 @@ let suplementosStock = [
 const creatina = suplementosStock[0]
 const carritoContador = document.querySelector("#contadorCarrito")
 const productosContainer = document.querySelector(".productos-container") 
-const precioTotal = document.querySelector("#precioTotal")
+
+const renderizarCantidad = () => {
+    carritoContador.innerText = carrito.length
+}
 
 
 suplementosStock.forEach( (suplemento) =>{
@@ -30,6 +33,7 @@ suplementosStock.forEach( (suplemento) =>{
     
     button.addEventListener('click', () => {
         agregarCarrito(suplemento.id)
+        renderizarCantidad()
     })
     productoTarjeta.append(button)
     
@@ -37,71 +41,53 @@ suplementosStock.forEach( (suplemento) =>{
 }) 
 
 
-//********************************************************* AGREGAR AL CARRITO *********************************************************
+// //********************************************************* AGREGAR AL CARRITO *********************************************************
 
-const carrito = []
+let carrito
+const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos"))
+if (productosEnCarritoLS) {
+    carrito = productosEnCarritoLS
+} else {
+    carrito = []
+}
 
-const carritoContainer = document.querySelector("#carrito-container")
+// const carritoContainer = document.querySelector("#carrito-container")
 
 const agregarCarrito = (id) => {
     const producto = suplementosStock.find( (suplemento) => suplemento.id === id)
     carrito.push(producto)
-
+    
     console.log(carrito)
-    renderizarCarrito()
+
+    Toastify({
+        text: "Producto Agregado",
+        duration: 3000,
+        style: {
+            background: "linear-gradient(to right, rgb(43, 0, 0), rgb(167, 16, 16))",
+        }
+        }).showToast();
+        
+    localStorage.setItem("productos", JSON.stringify(carrito))
+}
+
+// const renderizarCarrito = () => {
     
-}
-
-
-const renderizarCarrito = () => {
-
-    carritoContainer.innerHTML = ''
-
-    carrito.forEach(suplemento => {
-        const div = document.createElement("div")
-        div.className = "producto-carrito"
-        div.innerHTML = `
-                        <p>${suplemento.nombre}</p>
-                        <p>Precio $${suplemento.precio}</p>
-                        <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
-        `
+//     carritoContainer.innerHTML = ''
     
-        carritoContainer.append(div)
-    })
-
-    renderizarCantidad()
-    renderizarTotal()
-}
-
-const renderizarCantidad = () => {
-    carritoContador.innerText = carrito.length
-}
-
-const renderizarTotal = () => {
-
-    let total = 0
-
-    carrito.forEach((suplemento)=>{
-        total += suplemento.precio
-    })
-
-    precioTotal.innerText = total
-}
-
-//********************************************************* MODAL DEL CARRITO *********************************************************
-
-const modalContainer = document.getElementsByClassName("modal-container")[0]
-const modalCarrito = document.getElementsByClassName("modal-carrito")[0]
-const botonCerrar = document.getElementById("cerrarCarrito")     
-const botonAbrir = document.getElementById("boton-carrito")
-
-
-
-botonAbrir.addEventListener("click", ()=>(
-    modalContainer.classList.toggle("modal-active")
-))
-
-botonCerrar.addEventListener("click", ()=>(
-    modalContainer.classList.toggle("modal-active")
-))
+//     carrito.forEach(suplemento => {
+//         const div = document.createElement("div")
+//         div.className = "producto-carrito"
+//         div.innerHTML = `
+//         <p>${suplemento.nombre}</p>
+//         <p>Precio $${suplemento.precio}</p>
+//         <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+//         `
+        
+//         carritoContainer.append(div)
+//     })
+    
+//     renderizarCantidad()
+    
+//     localStorage.setItem("renderizadoProductos", renderizarCarrito)
+// }
 
