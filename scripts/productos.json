@@ -1,0 +1,10 @@
+[
+    {"id": "creatina", "nombre": "Creatina", "descripcion": "Creatina en polvo Monohidratada", "precio": 11000, "img": "./images/creatina.jpg"},
+    {"id": "proteina", "nombre": "Whey Protein", "descripcion": "Proteína en Polvo de Suero de leche", "precio": 9000, "img": "./images/proteina.jpg"},
+    {"id": "preentreno", "nombre": "Preentreno", "descripcion": "Preentreno en Polvo sabor Frutilla", "precio": 7500, "img": "./images/preentreno.jpg"},
+    {"id": "glutamina", "nombre": "Glutamina", "descripcion": "Glutamina en Polvo Micronizada", "precio": 5000, "img": "./images/glutamina.jpg"},
+    {"id": "bcaa", "nombre": "MTOR BCAA", "descripcion": "Aminoácidos en Polvo", "precio": 5000, "img": "./images/bcaa.jpg"},
+    {"id": "bucal", "nombre": "Bucal Venum", "descripcion": "Protector Bucal Venum Termomoldeable", "precio": 3500, "img": "./images/bucalVenum.jpg"},
+    {"id": "guantes", "nombre": "Guantes Venum", "descripcion": "Guantes de Boxeo Venum Elite 12oz", "precio": 14500, "img": "./images/guantesVenum.jpg"},
+    {"id": "vendas", "nombre": "Vendas Venum", "descripcion": "Vendas Venum con Abrojo de 4 Mts", "precio": 3500, "img": "./images/vendasVenum.jpg"}
+]

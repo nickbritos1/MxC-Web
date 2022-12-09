@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="https://kit.fontawesome.com/8cf43275b6.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/8cf43275b6.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="./scripts/app.js"></script>
     <title>Martin Carrizo</title>
@@ -80,18 +81,40 @@
     <section class="tienda">
         <div class="d-flex justify-content-center">
             <div class="encabezado">
-                <h2 class="text-white m-0">Suplementos</h2>
-                <a target="" href="pages/carrito.html" class="encabezado-carrito"><i class="fa-solid fa-cart-plus"></i> Carrito <span id="contadorCarrito">0</span></a>
+                <h2 class="text-white m-0">Tienda</h2>
             </div>
         </div>
         <div class="d-flex justify-content-center">
             <div class="productos-container">
-                <!-- <div class="producto">
-                    <img src="./images/creatina.jpg" alt="Creatina">
-                    <h4>Creatina Monohidratada</h4>
-                    <p class="producto__precio">$11000</p>
-                    <button class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
-                </div> -->
+
+                <!-- ESTO SE COMPLETA CON JS-->
+                
+            </div>
+        </div>
+        <div class="carritoBoton">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <div class="numeroCantidad">
+                <div>
+                    <p class="text-white m-0 numerito">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modalContainer">
+            <div class="modalCarrito">
+                <div class="infoCarrito d-flex justify-content-between">
+                    <h2>Tu Carrito</h2>
+                    <button class="boton-cerrar-modal"><i class="fa-solid fa-circle-xmark"></i></button>
+                </div>
+                <div class="productosEnCarrito">
+
+                    <!-- ESTO SE COMPLETA CON JS-->
+                    
+                </div>
+                <div class="modalBotones">
+                    <button class="boton-vaciar">Vaciar Carrito</button>
+                    <button class="boton-finalizar">Finalizar Compra: <span id="precioTotal"></span></button>
+                </div>
             </div>
         </div>
     </section>
